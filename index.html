@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="data/imgs/400x400.png">
+  <title>$DEV</title>
+  <style>
+    * {
+      box-sizing: border-box; /* Make sure paddings and borders are included in the total width and height */
+    }
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+      background-color: #f5eed4;
+    }
+    /* Banner Styling */
+    .banner {
+      background-color: #e1d3c1; /* A light color to match the site's theme */
+      padding: 10px 0; /* Some padding to give height to the banner */
+      text-align: center;
+      box-shadow: 0 11px 15px rgba(0,0,0,0.2); /* Adds depth to the banner */
+    }
+    .nav-link {
+      display: inline-block;
+      margin: 0 15px; /* Space out the navigation items */
+      transition: transform 0.3s; /* Smooth transition for hover effect */
+    }
+    .nav-link:hover {
+      transform: scale(1.1); /* Scale up the link a bit when hovered */
+    }
+    .nav-link img {
+      width: 50px; /* Set a default width for the nav images */
+      height: auto; /* Keep the aspect ratio */
+    }
+    .main-content {
+      margin-top: 200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px; /* Adds some space around the images */
+    }
+    .image-container img {
+      max-width: 100%;
+      max-height: 100%;
+      /* border-radius: 50%; Circular mask for images 'a' and 'b' */
+    }
+    #image-a, #image-b {
+      width: 1250px;
+      height: 400px;
+      overflow: hidden;
+      margin-right: 450px;
+      margin-left: -0px;
+    }
+    #image-b {
+  margin-right: 0; /* Ensures no additional margin on the right side of image-b */
+  margin-left: 475px; /* Adds margin to the left of image-b */
+}
+    #image-c {
+      width: 650px;
+      height: 350px;
+      border-radius: 0; /* No circular mask for image 'c' */
+    }
+    
+    /* New section styling */
+    .new-section {
+      margin-top: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; /* Stack children vertically */
+    }
+    .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .circle-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .circle-image img {
+      width: 350px;
+      height: auto;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 10px;
+      margin-bottom: 55px;
+      margin-left: 70px;
+    }
+    .circle-image1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .circle-image1 img {
+      width: 350px;
+      height: auto;
+      /* border-radius: 50%; */
+      overflow: hidden;
+      margin: 10px;
+      margin-left: 20px;
+    }
+    .rects-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .rects-image img {
+      width: 400px;
+      height: auto;
+      /* border-radius: 50%; */
+      overflow: hidden;
+      margin: 10px;
+      margin-left: 170px;
+      margin-bottom: 200px;
+    }
+    .dev-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .dev-img img {
+      width: 1000px;
+      height: auto;
+      overflow: hidden;
+      /* border-radius: 50%; */
+      /* margin: 5px; */
+      margin-right: 35px;
+      /* margin-bottom: -80px; */
+    }
+    /* Media queries */
+    @media (max-width: 1600px) {
+      #image-a, #image-b {
+        width: 450px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Banner -->
+  <div class="banner">
+    <a href="https://t.me/defoSana" class="nav-link">
+      <img src="data/imgs/telegram-3-512.png" alt="Nav 1">
+    </a>
+    <a href="https://t.me/devcoinsol" class="nav-link">
+      <img src="data/imgs/twitter-512.png" alt="Nav 2">
+    </a>
+    <!-- Add more navigation links as needed -->
+  </div>
+  <div class="main-content">
+    <div id="image-a" class="image-container">
+      <img src="data/imgs/left-head.gif" alt="Image A">
+    </div>
+    <div id="image-c" class="image-container">
+      <a href="https://your-link.com">
+        <img src="data/imgs/botton.png" alt="Image C" style="border-radius: 0;">
+      </a>
+    </div>    
+    <div id="image-b" class="image-container">
+      <img src="data/imgs/right-head.gif" alt="Image B">
+    </div>
+  </div>
+  <!-- New section below -->
+  <div class="new-section">
+    <!-- Insert your new content here -->
+    <div class="section">
+      <div id="image-bb" class="circle-image">
+        <img src="data/imgs/asf.png" alt="Image B">
+      </div>
+      <div class="column">
+        <div id="image-aa" class="dev-img">
+          <img src="data/imgs/11.png" alt="Image A" style="border-radius: 0;">
+        </div>
+        <div id="image-cc" class="rects-image">
+          <img src="data/imgs/3.png" alt="Image C">
+        </div>
+      </div>
+      <div id="image-dd" class="circle-image1">
+        <img src="data/imgs/arfarf 1.png" alt="Image D">
+      </div>
+  </div>
+</body>
+</html>
